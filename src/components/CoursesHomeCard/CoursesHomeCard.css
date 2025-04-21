@@ -1,0 +1,129 @@
+.CoursesCard{
+    width: 49%;
+    background-color: var(--absolute-white);
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid var(--light-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.CoursesCardImg img{
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+}
+.CoursesCard:hover img{
+    transform: scale(0.9);
+}
+.CoursesCard:hover h3{
+    color: var(--orange);
+}
+.CardContent{
+    margin: 30px 0px;
+}
+.CardContentAbout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.CardContentAbout p{
+    color: var(--text-color);
+}
+.CardAboutSpan{
+    display: flex;
+    gap: 10px;
+}
+.CardAboutSpan span{
+    padding: 10px 16px;
+    border: 1px solid var(--light-white);
+    border-radius: 8px;
+    color: var(--p-color);
+}
+.CardContentTitle h3{
+    line-height: 36px;
+    margin-bottom: 14px;
+    color: var(--text-color);
+}
+.CardContentTitle p{
+    line-height: 27px;
+    color: var(--p-color);
+}
+.CoursesCard a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 24px;
+    background-color: var(--background);
+    border: 1px solid var(--light-white);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    line-height: 27px;
+    transition: transform 0.3s;
+}
+.CoursesCard a:hover{
+    color: var(--absolute-white);
+    background-color: var(--orange);
+    transform: scale(1.05);
+}
+@media(max-width:1440px){
+    .CoursesCard{
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .CardContent{
+        margin: 24px 0px;
+    }
+    .CardContentAbout{
+        margin-bottom: 24px;
+    }
+    .CardContentAbout p{
+        font-size: 16px;
+    }
+    .CardAboutSpan span{
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .CardContentTitle h3{
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .CardContentTitle p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .CoursesCard a{
+        padding: 14px 24px;
+        border-radius: 6px;
+        line-height: 21px;
+        font-size: 14px;
+    }
+}
+@media(max-width:900px){
+    .CoursesCard{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .CoursesCard{
+        padding: 24px;
+    }
+    .CardContentAbout{
+        flex-direction: column;
+        align-items: start;
+        gap: 14px;
+    }
+    .CardContentTitle h3{
+        line-height: 27px;
+        font-size: 18px;
+    }
+    .CardContentTitle p{
+        line-height: 21px;
+        font-size: 14px;
+    }
+}

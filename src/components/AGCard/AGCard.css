@@ -1,0 +1,88 @@
+.AGCard{
+    width: 49.06%;
+    padding: 50px;
+    background-color: var(--absolute-white);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s,box-shadow 0.3s ;
+}
+.AGCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 149, 0, 0.5), 
+    0 4px 20px rgba(255, 149, 0, 0.3); 
+}
+.AGCardImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    padding: 16px;
+    background-color: var(--another-light-orange);
+    border-radius: 8px;
+    border: 1px solid var(--orange-stroke);
+}
+.AGCardText{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.AGCardText h3{
+    color: var( --text-color);
+    line-height: 36px;
+}
+.AGCardText p{
+    color: var(--p-color);
+    line-height: 27px;
+}
+@media(max-width:1440px){
+    .AGCard{
+        padding: 40px;
+        gap: 24px;
+        border-radius: 10px;
+    }
+    .AGCardImg{
+        width: 56px;
+        height: 56px;
+        padding: 14px;
+    }
+    .AGCardImg img{
+        width: 28px;
+        height: 28px;
+    }
+    .AGCardText{
+        gap: 10px;
+    }
+    .AGCardText h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .AGCardText p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media(max-width:800px){
+    .AGCard{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .AGCard{
+        padding: 30px;
+    }
+    .AGCardText{
+        gap: 6px;
+    }
+    .AGCardText h3{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .AGCardText p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

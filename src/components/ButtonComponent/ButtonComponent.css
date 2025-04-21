@@ -1,0 +1,27 @@
+.ButtonComponent {
+    display: inline-block;
+    padding: 18px 24px;
+    background-color: var(--another-color);
+    height: fit-content;
+    border-radius: 8px;
+    border: 1px solid var(--light-white);
+    cursor: pointer;
+    color: var(--text-color);
+    text-decoration: none;
+    line-height: 27px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.ButtonComponent:hover{
+    transform: scale(1.05);
+    background-color: var(--orange);
+    color: var(--absolute-white);
+}
+@media (max-width:1440px){
+    .ButtonComponent {
+        padding: 14px 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        line-height: 21px;
+}
+}

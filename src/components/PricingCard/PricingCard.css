@@ -1,0 +1,204 @@
+.plan-card{
+    width: 49%;
+    background-color: var(--another-color);
+    border: 1px solid var(--light-white);
+    padding: 50px 30px 30px 30px  ;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+.plan-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 149, 0, 0.5), 
+    0 4px 20px rgba(255, 149, 0, 0.3); 
+}
+.PlanName{
+    width: 100%;
+    background-color: var(--light-orange);
+    border: 1px solid var(--orange-stroke);
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 22px;
+}
+.PlanName h3{
+    font-size: 22px;
+    line-height: 37px;
+    color: var(--text-color);
+}
+.price{
+    color: var(--p-color);
+    line-height: 14px;
+}
+.pricespan{
+    color: var(--text-color);
+    line-height: 58.4px;
+}
+.Features{
+    width: 100%;
+}
+.FeaturesList{
+    width: 100%;
+    background-color: var(--absolute-white);
+    border: 1px solid var(--light-white);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 40px;
+}
+.FeaturesList p{
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    line-height: 30px;
+}
+.FeaturesList ul li{
+    border: 1px solid var(--light-white);
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--p-color);
+}
+.FeaturesList ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0px 30px 0px 30px;
+}
+.TrueCalss ,.FalseCalss {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    font-size: 20px;
+} 
+.TrueCalss {
+    background-color: var(--light-orange);
+}
+.FalseCalss {
+    border: 1px solid var(--light-white);
+}
+.FeaturesBtn{
+    width: 100%;
+    background-color: var(--orange);
+    border: none;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding: 20px 24px;
+    line-height: 27px;
+    color: var(--absolute-white);
+    cursor: pointer;
+}
+@media(max-width:1440px){
+    .plan-card{
+        padding: 40px 24px 24px 24px  ;
+    }
+    .PlanName{
+        border-radius: 4px;
+        padding: 10px 22px;
+    }
+    .PlanName h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .price{
+        font-size: 16px;
+        line-height: 12px;
+    }
+    .pricespan{
+        font-size: 60px;
+        line-height: 43.8px;
+    }
+    .FeaturesList{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 30px;
+    }
+    .FeaturesList p{
+        margin-bottom: 24px;
+        line-height: 27px;
+        font-size: 18px;
+    }
+    .FeaturesList ul li{
+        padding: 12px;
+        border-radius: 6px;
+        line-height: 24px;
+        font-size: 14px;
+        gap: 8px;
+    }
+    .FeaturesList ul{
+        gap: 20px;
+    }
+    .TrueCalss ,.FalseCalss {
+        padding: 4px;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        font-size: 16px;
+    } 
+    .FeaturesBtn{
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        font-size:14px;
+        line-height: 21px;
+    }
+}
+@media(max-width:1070px){
+    .plan-card{
+        width: 80%;
+    }
+}
+@media(max-width:750px){
+    .plan-card{
+        width: 100%;
+        padding: 30px 20px 20px 20px  ;
+        gap: 30px;
+    }
+    .FeaturesList{
+        padding: 20px;
+    }
+    .FeaturesList ul{
+        padding: 0px;
+    }
+    
+}
+@media(max-width:500px){
+    .PlanName{
+        border-radius: 4px;
+        padding: 8px 22px;
+    }
+    .PlanName h3{
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .price{
+        font-size: 16px;
+        line-height: 12px;
+    }
+    .pricespan{
+        font-size: 50px;
+        line-height:36.5px;
+    }
+    .FeaturesList{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .FeaturesList p{
+        margin-bottom: 20px;
+    }
+    .FeaturesBtn{
+        border-bottom-left-radius:8px;
+        border-bottom-right-radius:8px;
+    }
+}

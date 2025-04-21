@@ -1,0 +1,93 @@
+.BenefitsCard{
+    width: 32.29%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: var(--absolute-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s,box-shadow 0.3s ;
+}
+.BenefitsCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 149, 0, 0.5), 
+    0 4px 20px rgba(255, 149, 0, 0.3); 
+}
+.BenefitsCard span{
+    color: var(--text-color);
+}
+.BenefitsCardText h3{
+    line-height: 36px;
+    color: var(--icone-color);
+    margin-bottom: 14px;
+}
+.BenefitsCardText p{
+    line-height: 27px;
+    color: var(--p-color);
+}
+.BenefitsCardIcon{
+    padding: 20px;
+    background-color: var(--another-color);
+    border-radius: 8px;
+    width: 74px;
+    height: 74px;
+    border: 1px solid var(--light-white);
+    
+}
+.BenefitsCardIcon img{
+    width: 34px;
+}
+@media(max-width:1440px){
+    .BenefitsCard{
+        padding: 40px;
+        gap: 40px;
+        border-radius: 10px;
+    }
+    .BenefitsCard span{
+        font-size: 60px;
+    }
+    .BenefitsCardText h3{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .BenefitsCardText p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .BenefitsCardIcon{
+        padding: 14px;
+        border-radius: 6px;
+        width: 54px;
+        height: 54px;
+    }
+    .BenefitsCardIcon img{
+        width: 26px;
+    }
+}
+@media(max-width:1200px){
+    .BenefitsCard{
+        width: 49%;
+    }
+}
+@media(max-width:700px){
+    .BenefitsCard{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .BenefitsCard{
+        padding: 30px;
+        gap: 30px;
+    }
+    .BenefitsCard span{
+        font-size: 50px;
+    }
+    .BenefitsCardText p{
+        line-height: 21px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,21 @@
+.Achievements{
+    padding-top: 100px;
+    padding-bottom: 177px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+@media(max-width:1440px){
+    .Achievements{
+        padding-top: 80px;
+        padding-bottom: 100px;
+        gap: 60px;
+    }
+}
+@media(max-width:390px){
+    .Achievements{
+        padding-top: 50px;
+        padding-bottom:50px;
+        gap: 50px;
+    }
+}

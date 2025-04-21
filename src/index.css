@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+
+
+/* colors */
+:root{
+    --background: #f7f7f8;
+    --absolute-white: #ffffff;
+    --orange: #ff9500;
+    --light-orange: #fff4e5;
+    --light-white: #f1f1f3;
+    --another-color: #fcfcfd;
+    --text-color: #262626;
+    --p-color: #59595a; 
+    --another-light-orange: #fff9f0;
+    --orange-stroke: #ffeacc;
+    --icone-color: #333333;
+    --gray-color: #656567;
+    --border-color :#e4e4e7;
+    --orange-stroke2: #FFD599;
+}
+
+
+/* padding */
+.contianer-x{
+    padding: 0px 162px;
+}
+
+
+/* font Sizes */
+
+.fontsize18{
+    font-size: 18px;
+}
+.fontsize48{
+    font-size: 48px;
+}
+.fontsize20{
+    font-size: 20px;
+}
+.fontsize24{
+    font-size: 24px;
+}
+.sizeNum80{
+    font-size:80px;
+}
+.sizeNum50{
+    font-size:50px;
+}
+
+/* font Weight */
+.weight-400{
+    font-weight: 400;
+}
+.weight-500{
+    font-weight: 500;
+}
+.weight-600{
+    font-weight: 600;
+}
+.weight-700{
+    font-weight: 700;
+}
+.weight-800{
+    font-weight: 800;
+}
+
+body{
+    background-color: var(--background);
+}
+
+@media(max-width:1440px){
+    .contianer-x{
+        padding: 0px 80px;
+    }
+}
+@media(max-width:1070px){
+    .contianer-x{
+        padding: 0px 16px;
+    }
+}

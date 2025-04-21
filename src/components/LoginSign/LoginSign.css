@@ -1,0 +1,26 @@
+.LoginSign{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+@media(max-width:1440px){
+    .LoginSign{
+        padding-top: 80px;
+        gap: 80px;
+    }
+}
+@media(max-width:1000px){
+    .LoginSign{
+        flex-direction: column-reverse;
+    }   
+}
+@media(max-width:500px){
+    .LoginSign{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 50px;
+    }
+}

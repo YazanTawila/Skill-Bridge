@@ -1,0 +1,7 @@
+.CoursesCardsPage{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    gap: 50px;
+}

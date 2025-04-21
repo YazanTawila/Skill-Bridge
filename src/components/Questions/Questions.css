@@ -1,0 +1,176 @@
+.QuestionsSection{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.QuestionContent{
+    width: 100%;
+    border-radius: 12px;
+    padding: 100px;
+    background-color: var(--absolute-white);
+    display: flex;
+    justify-content: space-between;
+    /* gap: 120px; */
+}
+.QCleft{
+    width: 408px;
+}
+.QCAcc{
+    width: 867px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.QCleftTitle{
+    margin-bottom: 50px;
+}
+.QCleftTitle h3{
+    color: var(--text-color);
+    margin-bottom: 10px;
+    line-height: 57px;
+}
+.QCleftTitle p{
+    color: var(--text-color);
+    line-height: 27px;
+}
+.AccItem{
+    max-height: fit-content;
+    padding: 30px 50px;
+    border: 1px solid var(--light-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.AccItemTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.AccItemTitle h4{
+    line-height: 30px;
+    color: var(--text-color);
+}
+.AccItemTitle span{
+    padding:12px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--light-orange);
+}
+.AccItemTitle span svg{
+    font-size: 24px;
+    color:var(--text-color) ;
+}
+.AccItemContent{
+    max-height: 0;
+    overflow: hidden;
+    transition:all 0.5s  cubic-bezier(0,1,0,1);
+}
+.AccShow{
+    height: auto;
+    max-height: fit-content;
+    transition:all 0.5s  cubic-bezier(0,1,0,1);
+    margin-top: 35px;
+    padding-top: 50px;
+    line-height: 27px;
+    border-top: 1px solid var( --light-white) ;
+    color: var(--text-color);
+}
+@media(max-width:1440px){
+    .QuestionsSection{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .QuestionContent{
+        padding: 80px;
+        gap: 80px;
+    }
+    .QCleftTitle{
+        margin-bottom: 40px;
+    }
+    .QCleftTitle h3{
+        font-size: 38px;
+        line-height: 45.6px;
+        margin-bottom: 8px;
+    }
+    .QCleftTitle p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .AccItem{
+        padding: 24px 40px;
+        border-radius: 10px;
+    }
+    .AccItemTitle h4{
+        line-height: 27px;
+        font-size: 18px;
+    }
+    .AccItemTitle span{
+        padding:10px;
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+    }
+    .AccShow{
+        margin-top: 24px;
+        padding-top: 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media(max-width:1200px){
+    .QuestionContent{
+        background-color: var(--absolute-white);
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .QCleft,.QCAcc{
+        width: 100%;
+    }
+}
+@media(max-width:1070px){
+    .QuestionContent{
+    padding: 24px;
+    gap:40px;
+}
+}
+@media(max-width:500px){
+    .QCleftTitle{
+        margin-bottom: 20px;
+    }
+    .QCleftTitle h3{
+        font-size: 28px;
+        line-height: 33.6px;
+    }
+    .QCleftTitle p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .AccItem{
+        padding: 20px 24px;
+        border-radius: 10px;
+    }
+    .AccItemTitle h4{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .AccItemTitle span{
+        width: 40px;
+        height: 40px;
+    }
+    .AccItemTitle span svg{
+        font-size: 20px;
+    }
+    .AccShow{
+        margin-top: 20px;
+        padding-top: 20px;
+        line-height: 21px;
+        font-size: 14px;
+    }
+    .QCAcc{
+        gap: 20px;
+    }
+}

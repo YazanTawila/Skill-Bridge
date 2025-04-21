@@ -1,0 +1,48 @@
+.TitleContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.TitleText {
+    width: 73.70%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.TitleText h2{
+    line-height: 72px;
+    color: var(--text-color);
+}
+.TitleText p{
+    line-height: 27px;
+    color: var(--p-color);
+}
+@media(max-width:1440px){
+    .TitleText h2{
+        font-size:30px;
+        line-height: 45px;
+    }
+    .TitleText p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+}
+@media(max-width:500px){
+    .TitleText {
+        width: 100%;
+    }
+    .TitleContent{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .TitleText h2{
+        font-size:24px;
+        line-height: 36px;
+    }
+    .TitleText p{
+        line-height: 21px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,211 @@
+.ContactForm{
+    padding-top:100px ;
+    padding-bottom:150px ;
+}
+.FormContent{
+    display: flex;
+    background-color: var(--absolute-white);
+    border-radius: 12px;
+}
+.Form{
+    padding: 80px;
+    width: 67.41%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 1px solid var(--light-white);
+}
+.Form-group-1 , .Form-group-2{
+    display: flex;
+    gap: 30px;
+}
+.Group ,.Group-Sub ,.Group-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 48.5%;
+}
+.Group-Sub ,.Group-text{
+    width: 100%;
+}
+.Group input ,.Group-Sub input ,.Group-text textarea{
+    width: 100%;
+    padding: 24px 20px;
+    border: 1px solid var(--light-white);
+    background-color: var(--another-color);
+    border-radius: 12px;
+    color: var(--gray-color);
+    outline: none;
+}
+.Group input:focus ,.Group-Sub input:focus ,.Group-text textarea:focus{
+    border:2px solid var(--orange);
+}
+.Group label{
+    color: var(--text-color);
+}
+.Form-btn{
+    padding: 18px 24px;
+    border-radius: 10px;
+    border: none;
+    color: var(--absolute-white);
+    margin: 0 auto;
+    background-color: var(--orange);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.Form-btn:hover{
+    transform: scale(1.05);
+}
+/*  */
+.Contact{
+    padding: 80px;
+    width: 32.59%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contact-groub{
+    padding: 30px; 
+    background-color: var(--another-color);
+    border: 1px solid var(--light-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s,box-shadow 0.3s ;
+}
+.contact-groub:hover{
+    transform: translateY(-5px);
+}
+.contact-groub:hover span{
+    color: var(--orange);
+}
+.contact-groub span{
+    color: var(--p-color);
+}
+.Contact-img{
+    background-color: var(--background);
+    border: 1px solid var(--light-white);
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-groub-social{
+    display: flex;
+    gap: 14px;
+}
+.contact-groub-social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background-color: var(--background);
+    font-size: 25px;
+    color: var(--text-color);
+    border-radius: 8px;
+    border: 1px solid var(--light-white);
+    transition: transform 0.5s,box-shadow 0.3s ;
+}
+.contact-groub-social a:nth-of-type(1):hover{
+    transform: translateY(-5px);
+    color: aliceblue;
+    background-color: #316FF6;
+}
+.contact-groub-social a:nth-of-type(2):hover{
+    transform: translateY(-5px);
+    color: aliceblue;
+    background-color: #0077B5;
+}
+.contact-groub-social a:nth-of-type(3):hover{
+    transform: translateY(-5px);
+    color: aliceblue;
+    background-color: #1da1f2;
+}
+@media(max-width:1730px){
+    .ContactForm{
+        padding-top:80px ;
+        padding-bottom:80px ;
+    }
+    .Form,.Contact{
+        padding: 60px;
+    }
+    .contact-groub{
+        gap: 14px;
+    }
+    .Contact-img,.contact-groub-social div{ 
+        padding: 12px;
+    }
+    .Contact-img img ,.contact-groub-social div img{
+        width: 20px;
+    }
+    .Group ,.Group-Sub ,.Group-text{
+        gap: 12px;
+    }
+    .Group label ,.Group input ,
+    .Group-Sub input ,.Group-Sub label ,
+    .Group-text textarea ,.Group-text label,.contact-groub span{
+        font-size: 16px;
+    }
+    .Group input ,.Group-Sub input ,.Group-text textarea{
+        padding: 20px;
+    }
+    .Form-btn{
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+}
+@media(max-width:1280px){
+    .FormContent{
+        flex-direction: column;
+    }
+    .Form{
+        width: 100%;
+        border-bottom: 1px solid var(--light-white);
+    }
+    .Contact{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contact-groub{
+        width: 46%;
+    }
+}
+@media(max-width:777px){
+    .ContactForm{
+        padding-top:50px ;
+        padding-bottom:50px ;
+    }
+    .Form-group-1 , .Form-group-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Group ,.Group-Sub ,.Group-text{
+        width: 100%;
+    }
+    .contact-groub{
+        width: 100%;
+    }
+    .Form,.Contact{
+        padding: 30px;
+    }
+    .contact-groub{
+        border-radius: 6px;
+    }
+    .Group label ,.Group input ,
+    .Group-Sub input ,.Group-Sub label ,
+    .Group-text textarea ,.Group-text label,.contact-groub span{
+        font-size: 14px;
+    }
+    .Form-btn{
+        width: 100%;
+        padding: 14px 20px;
+    }
+}
+

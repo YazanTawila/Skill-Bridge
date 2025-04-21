@@ -1,0 +1,145 @@
+.topNav{
+    padding: 20px 30px 0px 30px;
+}
+.topNavContent{
+    background-color: var(--orange);
+    padding: 14px 0px;
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--absolute-white);
+}
+.navBar{
+    padding-top: 20px;
+    padding-bottom: 24px;
+    display: flex;
+    gap: 50px;
+    background-color: var(--background);
+    transition: top 0.4s ease ;
+    position: relative;
+}
+.navBar.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+
+}
+.navLinks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+}
+.navLinks ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 14px 24px;
+    border-radius: 8px;
+}
+
+.navLinks ul li a:hover{
+    background-color: var(--light-white);
+    color: var(--orange);
+}
+.activlink {
+    background-color: var(--light-white);
+    color: var(--orange) !important;
+}
+.buttons a{
+    text-decoration: none;
+    border: none;
+    background:none;
+    padding: 14px 34px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.buttons :nth-of-type(2){
+    background-color: var(--orange);
+    border-radius: 8px;
+    color: white;
+}
+.navLinks .bars{
+    display: none;
+    width: 34px;
+
+}
+@media (max-width:1440px){
+    .navBar{
+        padding: 16px 80px 20px 80px;
+    }
+    .navBar img{
+        width: 44px;
+    }
+    .navLinks ul li a{
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .buttons button{
+        font-size:14px;
+        padding: 12px 24px;
+    }
+    .topNav{
+        padding: 20px 20px 0px 20px;
+    }
+    .topNavContent{
+        font-size: 14px;
+    }
+}
+@media (max-width:1070px){
+    .navLinks ul{
+        display: none;
+    }
+    .navLinks{
+        justify-content: end;
+        gap: 20px;
+    }
+    .navBar {
+        padding: 14px 16px;
+        gap: 0;
+    }
+    .nav-ul.open{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        position: absolute;
+        height: 50vh;
+        top: 72px;
+        z-index: 1000;
+        justify-content: center;
+        right: 0;
+        background:var(--orange);
+        backdrop-filter: blur(10px);
+    }
+    .navLinks .bars{
+        display: block;
+    }
+    .topNav{
+        padding: 40px 16px 0px 16px;
+    }
+}
+@media (max-width:500px){
+    .topNavContent{
+        font-size: 14px;
+        padding: 10px 0px;
+        gap: 12px;
+    }
+    .navBar img{
+        width: 40px;
+    }
+    .buttons a{
+        font-size:14px;
+        padding: 12px 20px;
+    }
+}

@@ -1,0 +1,104 @@
+.TogetherSection{
+    padding-bottom: 205px;
+}
+.Together{
+    width: 100%;
+    padding: 80px;
+    background-color: var(--absolute-white);
+    background-image: url(../../assets/images/AbstractDesign.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:calc(100% - 180px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.TogetherTitle{
+    width: 70%;
+}
+.TogetherTitle h2{
+    line-height: 57.6px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.TogetherTitle h2 span{
+    color: var(--orange);
+}
+.TogetherTitle p{
+    line-height: 27px;
+    color: var(--p-color);
+}
+.btn{
+    padding: 18px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: var(--absolute-white);
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+@media(max-width:1440px){
+    .TogetherSection{
+        padding-bottom: 100px;
+    }
+    .TogetherTitle{
+        width: 59.14%;
+    }
+    .Together{
+        padding: 60px;
+        background-position:calc(100% - 180px);
+        border-radius: 10px;
+    }
+    .TogetherTitle h2{
+        font-size: 38px;
+        line-height: 45.6px;
+        margin-bottom: 14px;
+    }
+    .TogetherTitle p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+}
+@media(max-width:1000px){
+    .Together{
+        background-position:right -60px bottom -100px;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+    .TogetherTitle{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .TogetherSection{
+        padding-bottom: 50px;
+    }
+    .Together{
+        background-size:330px;
+        padding: 30px;
+    }
+    .TogetherTitle{
+        width: 100%;
+    }
+    .TogetherTitle h2{
+        font-size: 28px;
+        line-height: 33.6px;
+        margin-bottom: 10px;
+    }
+    .TogetherTitle p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

@@ -1,0 +1,6 @@
+.AGCardsComponent{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}

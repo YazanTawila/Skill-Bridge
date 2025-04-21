@@ -1,0 +1,154 @@
+.hero{
+    padding: 100px 476px 100px 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.H-Title{
+    width: max-content;
+    padding: 14px 30px 14px 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--another-color);
+    border: 1px solid var(--light-white);
+    border-radius: 11px;
+    position: relative;
+    z-index: -1;
+    color: var(--text-color);
+
+}
+.lines{
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -30px;
+}
+.H-Title-Img{
+    padding: 14px;
+    border-radius: 6px;
+    background-color: var(--light-orange);
+}
+.H-Title-Img img{
+    width: 34px;
+    height: 34px;
+}
+.H-Title h1{
+    line-height: 72px;
+    color: var(--text-color);
+}
+.H-Title h1 span{
+    color: var(--orange);
+}
+.H-Des{
+    width: max-content;
+}
+.H-Des h2{
+    text-align: center;
+    font-size: 38px;
+    line-height: 57px;
+    margin: 20px 0px 10px 0px;
+    color: var(--text-color);
+}
+.H-Des p{
+    text-align: center;
+    line-height: 27px;
+    color: var(--text-color);
+}
+.H-buttons{
+    margin-top: 60px;
+    display: flex;
+    gap: 12px;
+}
+.H-buttons a{
+    padding: 18px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    line-height: 27px;
+}
+.H-buttons a:nth-child(1){
+    background-color: var(--orange);
+    color: white;
+    transition: transform 0.5s,box-shadow 0.3s ;
+}
+.H-buttons a:nth-child(2){
+    background-color: var( --absolute-white);
+    color: var(--text-color);
+    border: 1px solid var(--light-white);
+    transition: transform 0.3s,box-shadow 0.3s ;
+}
+.H-buttons a:nth-child(1):hover,.H-buttons a:nth-child(2):hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media(max-width:1440px){
+    .hero{
+        padding: 80px 250px 100px 250px;
+    }
+    .H-Title{
+        padding: 12px 24px 12px 12px;
+    }
+    .H-Title h1{
+        line-height: 54px;
+        font-size: 36px;
+    }
+    .H-Title-Img{
+        padding: 12px;
+    }
+    .H-Title-Img img{
+        width: 24px;
+        height: 24px;
+    }
+    .H-Des h2{
+        font-size: 28px;
+        line-height: 42px;
+        margin: 16px 0px 6px 0px;
+    }
+    .H-Des p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .H-buttons{
+        margin-top: 50px;
+    }
+    .H-buttons a{
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+@media(max-width:1070px){
+    .hero{
+        padding: 50px 16px 30px 16px;
+    }
+}
+@media(max-width:710px){
+    .H-Title{
+        width: 100%;
+        padding: 14px;
+    }
+    .H-Title h1{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .H-Des{
+        width: 100%;
+    }
+    .H-Des h2{
+        font-size: 24px;
+        line-height: 34px;
+        margin: 16px 0px 6px 0px;
+    }
+    .H-Des p{
+        font-size: 14px;
+        line-height: 42px;
+    }
+    .lines{
+        position: absolute;
+        z-index: 222;
+        top: -18px;
+        left: -18px;
+    }
+}
