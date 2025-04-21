@@ -28,7 +28,7 @@ function App() {
     {loding ? <PageLoding/>: <>
       <Cursor/>
       <Routes location={location} key={location.key}>
-        <Route path='/Skill-Bridge' element={<FarmerMotion><Home/></FarmerMotion> } />
+        <Route path='/' element={<FarmerMotion><Home/></FarmerMotion> } />
         <Route path='/about' element={<FarmerMotion><About/></FarmerMotion>} />
         <Route path='/pricing' element={<FarmerMotion><Pricing/></FarmerMotion>} />
         <Route path='/contact' element={<FarmerMotion><Contact/></FarmerMotion>} />

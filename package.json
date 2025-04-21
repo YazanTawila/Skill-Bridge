@@ -1,15 +1,11 @@
 {
-  "homepage": "https://YazanTawila.github.io/Skill-Bridge",
   "name": "skill-bridge",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",    
-    "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lint": "eslint ."
   },
   "dependencies": {
